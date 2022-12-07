@@ -6,15 +6,15 @@ body {
     margin: 0;
     padding: 0;
     font-family: 'Zen Dots', cursive;
-    background-color: rgb(20, 18, 18);
+    background-color: black;
 }
 
 
 /* Main */
 #header {
-    height: 100px;
+    height: 90px;
     width: 1350px;
-    background-color: rgb(3, 2, 2);
+    background-color: rgb(20, 10, 10);
     margin: 0 auto;
     border-radius: 20px;
 }
@@ -23,12 +23,14 @@ body {
     /* height: 50px; */
     width: 1230px;
     margin-top: 5px;
-    background-color: aqua;
+    display:flex ;
+    align-items: center;
+    justify-content: space-between;
 }
 
-#header .container>div {
-    display: inline-block;
-}
+/* #header .container>div {
+    /* display: inline-block; */
+ 
 
 /* title */
 .title {
@@ -43,7 +45,8 @@ body {
     display: inline-flex;
 }
 
-.tcontainer h2 {
+.tcontainer h1 {
+    margin-top: 17px;
     font-size: 35px;
     text-shadow: 2px 2px red;
 }
@@ -69,7 +72,7 @@ body {
     border-radius: 20px;
     display: flex;
     align-items: center;
-    justify-content: first baseline;
+    /* justify-content: first baseline; */
 }
 
 .scontainer img {
@@ -95,14 +98,19 @@ body {
     font-size: 15px;
 }
 
+.sinput input::placeholder{
+    color: rgb(0, 0, 0);
+    font-weight: 600;
+    opacity: 85%;
+}
 /* Profile (User) */
 .profile{
     width: 100px;
-    background-color: royalblue;
+    /* background-color: royalblue; */
 }
 
-.pcontainer span{
+.pcontainer img{
+    width: 50px;
     /* color: aqua; */
-    size: 50px;
-    margin-right: 5px;
+    /* margin-right: 5px; */
 }
