@@ -9,25 +9,100 @@ body {
     background-color: rgb(20, 18, 18);
 }
 
+
 /* Main */
 #header {
     height: 100px;
-    width: 1240px;
-    background-color: cadetblue;
+    width: 1350px;
+    background-color: rgb(3, 2, 2);
     margin: 0 auto;
     border-radius: 20px;
 }
 
+#header .container {
+    /* height: 50px; */
+    width: 1230px;
+    margin-top: 5px;
+    background-color: aqua;
+}
+
 #header .container>div {
     display: inline-block;
-    align-items: center;
-    text-align: center;
-    justify-content: center;
-    margin-left: 7px;
+}
+
+/* title */
+.title {
+    /* background-color: rgb(81, 57, 28); */
+    width: fit-content;
+    margin-top: 1px;
+    margin-left: 150px;
+}
+
+/* title details */
+.title .tcontainer {
+    display: inline-flex;
+}
+
+.tcontainer h2 {
+    font-size: 35px;
+    text-shadow: 2px 2px red;
 }
 
 
-.title img {
-    width: 50px;
-    border-radius: 5px;
+
+/* Seacrh details */
+.search {
+    height: 42px;
+    width: 300px;
+    background-color: red;
+    margin-left: 90px;
+    margin-bottom: 5px;
+    border-radius: 10px;
+}
+
+
+
+.scontainer {
+    /* background-color: aqua; */
+    /* height: 50px; */
+    width: 300px;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: first baseline;
+}
+
+.scontainer img {
+    width: 30px;
+    margin-top: 5px;
+    margin-left: 8px;
+}
+
+.scontainer svg {
+    color: white;
+}
+
+.sinput {
+    margin-left: 20px;
+}
+
+.sinput input {
+    width: 230px;
+    background-color: red;
+    border: 1px;
+    outline: none;
+    color: white;
+    font-size: 15px;
+}
+
+/* Profile (User) */
+.profile{
+    width: 100px;
+    background-color: royalblue;
+}
+
+.pcontainer span{
+    /* color: aqua; */
+    size: 50px;
+    margin-right: 5px;
 }
