@@ -9,6 +9,16 @@ body {
     background-color: black;
 }
 
+/* All Things Edits */
+* {
+    font-family: 'Zen Dots', cursive;
+}
+
+::selection {
+    color: red;
+    background-color: black;
+}
+
 
 /* Main */
 #header {
@@ -95,8 +105,9 @@ body {
     background-color: red;
     border: 1px;
     outline: none;
-    color: white;
+    color: black;
     font-size: 15px;
+    font-weight: 600;
 }
 
 .sinput input::placeholder {
@@ -108,6 +119,7 @@ body {
 /* Profile (User) */
 .profile {
     width: 100px;
+    position: relative;
     /* background-color: royalblue; */
 }
 
@@ -120,4 +132,31 @@ body {
     width: 50px;
     /* color: aqua; */
     /* margin-right: 5px; */
+}
+
+.sign {
+    height: 75px;
+    width: 100px;
+    background-color: rgb(20, 8, 8);
+    position: absolute;
+    top: 50px;
+    right: 38px;
+    display: flex;
+    opacity: 0;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    visibility: hidden;
+    transition: 0.5s;
+}
+
+.profile:hover .sign {
+    opacity: 1;
+    visibility: visible;
+}
+
+.sign a {
+    text-decoration: none;
+    color: black;
+    text-shadow: 2px 2px red;
 }
